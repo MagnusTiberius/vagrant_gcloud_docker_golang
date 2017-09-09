@@ -28,6 +28,7 @@ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install -y google-cloud-sdk kubectl
 #{}sudo apt-get install -y
+gcloud container clusters get-credentials
 
 #wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-169.0.0-linux-x86_64.tar.gz >/dev/null 2>&1
 #sudo tar -xzvf google-cloud-sdk-169.0.0-linux-x86_64.tar.gz
