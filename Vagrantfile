@@ -27,8 +27,7 @@ echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee 
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install -y google-cloud-sdk kubectl
-#{}sudo apt-get install -y
-gcloud container clusters get-credentials
+#sudo apt-get install -y
 
 #wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-169.0.0-linux-x86_64.tar.gz >/dev/null 2>&1
 #sudo tar -xzvf google-cloud-sdk-169.0.0-linux-x86_64.tar.gz
@@ -36,7 +35,7 @@ gcloud container clusters get-credentials
 SCRIPT
 
 $setup_golang_git = <<SCRIPT
-#{}sudo wget https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz >/dev/null 2>&1
+#sudo wget https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz >/dev/null 2>&1
 sudo tar -zxvf go1.9.linux-amd64.tar.gz
 sudo mv go /usr/local
 #install git
