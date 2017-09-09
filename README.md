@@ -1,0 +1,1 @@
+# vagrant_gcloud_docker_golang
